@@ -5,17 +5,16 @@ void main() {
   String name = 'Redjan';
   int age = 20;
 
-  int output = myNumber(favNum, name, age);
-
-  stdout.write(output);
+  stdout.write(myNumber(favNum, name, age));
 }
 
-int myNumber(int p_favNum, String p_name, int p_age) {
-  int age = p_age + p_favNum;
+String myNumber(int p_favNum, String p_name, int p_age) {
+  // int age = p_age + p_favNum;
   // String name = p_name;
 
+  String name = 'My name is $p_name';
   // stdout.write('My name is $name, I\'am $age years old..');
-  return age;
+  return name;
 }
 
 myDisplay() {}
