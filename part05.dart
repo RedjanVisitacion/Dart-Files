@@ -1,13 +1,13 @@
 import 'dart:io';
 
 void main() {
-  int favNum = 5;
+  int favNum = 9;
   String name = 'Redjan';
   int age = 20;
 
   int output = myNumber(favNum, name, age);
 
-  print(output);
+  stdout.write(output);
 }
 
 int myNumber(int p_favNum, String p_name, int p_age) {
