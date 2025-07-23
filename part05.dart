@@ -1,20 +1,15 @@
 import 'dart:io';
 
 void main() {
-  int favNum = 9;
-  String name = 'Redjan';
+  String name = "Redjan";
   int age = 20;
 
-  stdout.write(myNumber(favNum, name, age));
+  myInfo(name, age);
 }
 
-String myNumber(int p_favNum, String p_name, int p_age) {
-  // int age = p_age + p_favNum;
-  // String name = p_name;
+void myInfo(String p_name, int p_age) {
+  String name = p_name;
+  int age = p_age;
 
-  String name = 'My name is $p_name';
-  // stdout.write('My name is $name, I\'am $age years old..');
-  return name;
+  stdout.write('My name is $name, \nI\'am $age years old..');
 }
-
-myDisplay() {}
